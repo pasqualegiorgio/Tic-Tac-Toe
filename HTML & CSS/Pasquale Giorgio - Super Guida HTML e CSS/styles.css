@@ -1,0 +1,298 @@
+@font-face {
+  font-family: 'Terminess';
+  src: url('Terminess (TTF) Nerd Font Complete.ttf') format('ttf');
+}
+
+.navbar {
+  display: block;
+  margin: 0 auto;
+  background-color: #606167;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #caebf2;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+.pattern {
+  padding: 30px;
+}
+
+.toppattern {
+  background-image: url(bg-image.jpg);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+
+#mainHeader {
+  margin-top: 10px;
+}
+
+#title {
+  display: none;
+}
+
+#secondarytitle {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #CAEBF2;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.contact p {
+  margin-bottom: 5px;
+}
+
+.social {
+  font-size: 40px;
+  margin: -10px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+#workbox {
+  padding-bottom: 30px;
+}
+
+#myprocess {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#myprocess img {
+  display: block;
+  margin: 30px auto;
+}
+
+#contactblock {
+  text-align: center;
+}
+
+#contactblock p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2 span {
+  position: absolute;
+  top: -50px;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+.progress-bar {
+  background-color: #1A1A1A;
+  height: 25px;
+  padding: 5px;
+  width: 360px;
+  margin: 60px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  -webkit-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.progress-bar span {
+    display: inline-block;
+    height: 25px;
+    width: 25%;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    background: rgb(1,182,178);
+    background: linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+    background: -o-linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+    background: -moz-linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+    background: -webkit-linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+    background: -ms-linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0.39, rgb(1,182,178)), color-stop(0.7, rgb(27,219,214)), color-stop(0.85, rgb(54,255,255)));
+    -webkit-transition: width .4s ease-in-out;
+    -moz-transition: width .4s ease-in-out;
+    -ms-transition: width .4s ease-in-out;
+    -o-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+
+#casebody {
+  font-size: 18px;
+}
+
+/* Larger than mobile */
+
+@media (min-width: 450px) {
+  .nav a {
+    padding: 0 30px;
+  }
+  .hard-skills {
+    width: 100%;
+  }
+  .soft-skills {
+    width: 100%;
+  }
+}
+
+/* Larger than tablet */
+
+@media (min-width: 770px) {
+  .contact {
+    text-align: right;
+  }
+  .nav a {
+    padding: 0 50px;
+  }
+  .hard-skills {
+    width: 100%;
+  }
+  .soft-skills {
+    width: 100%;
+  }
+  #secondarytitle {
+    display: none;
+  }
+  #title {
+    display: inline;
+    margin-top: 55px;
+  }
+}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+  h4 {
+    font-size: 2rem;
+  }
+  #myprocess p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .hard-skills {
+    width: 100%;
+  }
+  .soft-skills {
+    width: 100%;
+  }
+}
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1400px) {
+  .contact p {
+    margin-bottom: 5px;
+  }
+  h4 {
+    font-size: 2.6rem;
+  }
+  .hard-skills {
+    float: left;
+    width: 50%;
+  }
+  .soft-skills {
+    float: right;
+    width: 50%;
+  }
+}
+
+/* Smaller that mobile */
+
+@media (max-width: 450px) {
+  .progress-bar {
+    background-color: #1A1A1A;
+    height: 25px;
+    padding: 5px;
+    width: 300px;
+    margin: 60px 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+    -webkit-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  }
+
+  .progress-bar span {
+      display: inline-block;
+      height: 25px;
+      width: 25%;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+      -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+      background: rgb(1,182,178);
+      background: linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+      background: -o-linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+      background: -moz-linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+      background: -webkit-linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+      background: -ms-linear-gradient(bottom, rgb(1,182,178) 39%, rgb(27,219,214) 70%, rgb(54,255,255) 85%);
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(0.39, rgb(1,182,178)), color-stop(0.7, rgb(27,219,214)), color-stop(0.85, rgb(54,255,255)));
+      -webkit-transition: width .4s ease-in-out;
+      -moz-transition: width .4s ease-in-out;
+      -ms-transition: width .4s ease-in-out;
+      -o-transition: width .4s ease-in-out;
+      transition: width .4s ease-in-out;
+  }
+  .hard-skills {
+    width: 100%;
+  }
+  .soft-skills {
+    width: 100%;
+  }
+  .myimg {
+    width: 90%;
+  }
+}
