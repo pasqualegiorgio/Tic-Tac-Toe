@@ -5,158 +5,57 @@
 	  <link href="sunny_cloud.png" rel="icon">
 	  <meta name="author" content="Pasquale Giorgio">
 	  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Kulim+Park:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
     <!--
-    <link href="style/css/simple.css" rel="stylesheet">
+    <link  href="style/css/simple.css" href="style/css/simple.css" rel="stylesheet">
 	  <script src="js/jQuery.js" rel="text/javascript"></script>
 	  <script src="js/sweetalert.min.js" rel="text/javascript"></script>
 	  <script src="js/weather.js" rel="text/javascript"></script>
     -->
   </head>
 
-<body>
-	<div class="page-content">
-		<header>
-			<div class="header" id="header">
-				<p class="title">What's the weather like?</a>
-			</div>
-		</header>
+  <body>
+	  <div class="page-content">
+		  <header>
+			  <div class="header" id="header">
+				  <p class="title">What's the weather like?</p>
+			  </div>
+		  </header>
 
-<!--
-		<div class="search-bar" align="center">
-			<form id="request" method="POST">
-				<table style="width: 100%">
-					<tr>
-						<td align="left">
-							<input type="text" id="city" name="city" autocomplete="city" class="search-box" id="request" placeholder="Inserisci una città" title="Compila questo campo.">
-						</td>
+      <div class="search-bar" align="center">
+        <form id="request" class="search-city" method="POST">
+          <table style="width: 100%">
+            <tr>
+              <td align="left">
+                <input id="city" class="search-box" type="text" name="city" placeholder="Insert a city">
+              </td>
+              <td align="right">
+                <button class="button" type="submit">Cerca</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
 
-						<td align="right">
-							<button type="submit" class="button">Vai</button>
-						</td>
-					</tr>
-				</table>
-			</form>
-		</div>
+      <div class="general-weather">
+        <a id="city-name">Andria</a>
+        <a id="country">IT</a>
+        <div class="weather">
+          <!--Inserire codice JavaScript per mettere determinate icone in base al meteo dato-->
+          <script>
 
-		<main>
-			<div class="main-result">
-				<a class="title" id="city-name"></a>
+          </script>
+      </div>
 
-				<a class="sub-title" id="country"></a>
+      <div class="detailed-weather">
 
-				<a class="info" id="city-id"></a>
+      </div>
 
-				<div class="instant-info">
-					<a class="info"><img class="icon" id="state-icon"></a>
-					<br>
-					<a class="info" id="state"></a>
-					<br>
-					<a id="temp"></a>
-				</div>
+      <div class="footer">
 
-				<div id="main-measures">
-					<table>
-						<tr>
-							<td>
-								<a class="info">Temperatura Massima</a>
-							</td>
-
-							<td>
-								<a class="info" id="temp-max"></a>
-							</td>
-						</tr>
-
-						<tr>
-							<td>
-								<a class="info">Temperatura Minima</a>
-							</td>
-
-							<td>
-								<a class="info" id="temp-min"></a>
-							</td>
-						</tr>
-
-						<tr>
-							<td>
-								<a class="info">Umidità</a>
-							</td>
-
-							<td>
-								<a class="info" id="humidity"></a>
-							</td>
-						</tr>
-
-						<tr>
-							<td>
-								<a class="info">Pressione Atmosferica</a>
-							</td>
-
-							<td>
-								<a class="info" id="pressure"></a>
-							</td>
-						</tr>
-
-						<tr>
-							<td>
-								<a class="info">Visibilità</a>
-							</td>
-
-							<td>
-								<a class="info" id="visibility"></a>
-							</td>
-						</tr>
-					</table>
-				</div>
-
-				<div id="wind">
-					<a class="sub-title">Vento</a>
-					<br>
-					<a class="info">Direzione: </a>
-					<a class="info" id="deg"></a>
-					<br>
-					<a class="info">Velocità: </a>
-					<a class="info" id="speed"></a>
-				</div>
-
-				<div id="additional-measures">
-					<a class="sub-title">Misure Aggiuntive</a>
-					<br>
-					<a class="info">Latitudine: </a>
-					<a class="info" id="lat"></a>
-					<br>
-					<a class="info">Longitudine: </a>
-					<a class="info" id="lon"></a>
-					<br>
-					<br>
-					<a class="info">Sorgimento: </a>
-					<a class="info" id="sunrise"></a>
-					<br>
-					<a class="info">Tramonto: </a>
-					<a class="info" id="sunset"></a>
-				</div>
-			</div>
-		</main>
-	</div>
-
-	<div class="footer">
-		<div id="credits">
-			<a class="info" >Realizzato con:</a>
-			<br>
-			<a href="https://openweathermap.org/" target="_blank"><img class="icon" src="icons/owm.svg"></a>
-			<a href="https://jquery.com/" target="_blank"><img class="icon" src="icons/jquery.png"></a>
-			<a href="https://sweetalert.js.org/" target="_blank"><img class="icon" src="icons/swal.svg"></a>
-		</div>
-
-		<br>
-
-		<div id="social">
-			<a href="http://snisni.it"><img class="icon" src="http://snisni.it/Icons/SNISNI-Modern-Logo.png"></a>
-		</div>
-
-		<br>
-
-		<p class="info"><i>jsweather 2.0</i></p>
-	</div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
--->

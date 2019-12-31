@@ -1,0 +1,56 @@
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none;
+}
+
+body {
+  background-image: url(sfondo.png);
+  background-repeat: repeat-x;
+}
+
+div#content {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+div#header {
+  width: 960px;
+  height: 120px;
+  background-color: #6666cc;
+  margin-bottom: 20px;
+}
+
+div#article {
+  width: 700px;
+  height: 400px;
+  background-color: #9966cc;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+div#aside {
+  width: 240px;
+  height: 400px;
+  background-color: #333399;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.clearer {
+  clear: both;
+}
+
+div#footer {
+  width: 960px;
+  height: 100px;
+  background-color: #333366;
+  margin-bottom: 20px;
+}

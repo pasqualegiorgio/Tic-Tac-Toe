@@ -1,0 +1,21 @@
+<!--
+Visualizzare nella finestra del browser, utilizzando codice javascript, il quadrato dei
+primi 15 numeri interi e la scritta "fine elaborazione" al termine.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio JS0002</title>
+    <script language="Javascript">
+      function Quadrati() {
+        for (i=1; i<=15; i++) {
+          document.writeln(i * i + "<br>");
+        }
+        document.writeln("Fine elaborazione");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" name="esegui" value="Esegui" onclick="Quadrati()">
+  </body>
+</html>
