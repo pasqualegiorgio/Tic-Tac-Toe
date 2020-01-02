@@ -1,14 +1,5 @@
-* [ Script Meteo ]
-* Scritto da Mattia Sinisi per start2impact.it
-* Utilizzati:
-* 		- jQuery 3.3.1
-* 		- openweathermap.org API 2.5
-*
-* Su di me: http://www.snisni.it/about/me
-*/
-
 window.onload = function(){
- getWeatherByCity("Roma");
+ getWeatherByCity("Andria");
 }
 
 $(function(){
@@ -21,12 +12,13 @@ $(function(){
 });
 
 function getWeatherByCity( request ){
- var key = "b658b4b7d5c127849aa0fc3be6ca9a70";
- var apiUrl = "https://api.openweathermap.org/data/2.5/weather?appid=" + key + "&units=metric&lang=it&q=";
+ var key = "efa6f02761d89bccc4da7072252c5102";
+ var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + getWeatherByCity( $("#city").val() ) + "&appid=" + key;
 
- $.ajax({
+ jQuery.ajax(
+   {
    dataType: "json",
-   url: apiUrl + request,
+   url: apiUrl,
    data: "",
    success: function(){ console.log("jsweather@> Request Completed") },
    statusCode: {
@@ -46,9 +38,10 @@ function getWeatherByCity( request ){
        });
      }
    }
- });
+ }
+);
 
- $.getJSON( apiUrl + request,  function( data ){
+ $.getJSON( apiUrl,  function( data ){
    assign(data);
  });
 }

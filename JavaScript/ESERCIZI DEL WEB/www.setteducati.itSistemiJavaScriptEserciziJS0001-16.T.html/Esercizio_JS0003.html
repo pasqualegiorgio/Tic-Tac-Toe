@@ -1,0 +1,28 @@
+<!--
+Scrivere in una pagina HTML il codice javascript per eseguire le quattro operazioni
+fondamentali su due operandi acquisiti con la funzione prompt e visualizzare il risultato.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio JS0003</title>
+    <script language="Javascript"> {
+      'use strict';
+
+      let op1 = parseInt( prompt("Inserisci il primo operando") );
+      let op2 = parseInt( prompt("Inserisci il secondo operando") );
+      let somma = op1 + op2;
+      let differenza = op1 - op2;
+      let prodotto = op1 * op2;
+      let quoziente = op1 / op2;
+      alert("Il risultato dell'addizione è " + somma);
+      alert("Il risultato della sottrazione è " + differenza);
+      alert("Il risultato della moltiplicazione è " + prodotto);
+      alert("Il risultato della divisione è " + quoziente);
+    }
+    </script>
+  </head>
+  <body>
+    <input type="button" name="esegui" value="Esegui" onclick="Calcola()">
+  </body>
+</html>
