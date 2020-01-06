@@ -1,0 +1,29 @@
+<!--
+Visualizzare la tabellina pitagorica dei prim 10 numeri.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio JS0005</title>
+    <style type="text/css">
+    </style>
+    <script language="Javascript">
+      function Calcola() {
+        document.write('<table border="1"');
+        for (let i = 1; i <= 10; i++) {
+          document.write('<tr>');
+          for (let j = 1; j <= 10; j++) {
+            document.write('<td align="center">');
+            document.write(i * j);
+            document.write('</td>');
+          }
+          document.write('</tr>');
+        }
+        document.write('</table>');
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" name="esegui" value="Esegui" onclick="Calcola()">
+  </body>
+</html>

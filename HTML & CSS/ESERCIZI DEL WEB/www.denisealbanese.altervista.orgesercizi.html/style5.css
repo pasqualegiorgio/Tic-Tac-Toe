@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  padding: 0;
+}
+
+img {
+  border: none;
+}
+
+div#nav ul {
+  list-style: none;
+}
+
+div#nav li {
+  width: 120px;
+  height: 50px;
+  border-radius: 8px;
+  border-top: 1px solid #FFF;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40;
+  background-color: #906;
+}
+
+div#nav a {
+  width: 120px;
+  height: 50px;
+  display: block;
+}
+
+div#nav a:link, div#nav a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+div#nav a:hover {
+  text-decoration: underline;
+  color: #FF0;
+  background-color: #060;
+  border-radius: 8px;
+}

@@ -1,0 +1,93 @@
+<!--
+Visualizzare nella finestra del browser, utilizzando codice javascript, il quadrato dei
+primi n numeri interi e la scritta "fine elaborazione" al termine.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esercizio JS0004</title>
+    <script language="Javascript">
+      function Quadrati(n) {
+        document.getElementById("out").value="";
+        for (i = 1; i <= n; i++) {
+          document.getElementById("out").value += i * i + "\n";
+        }
+        document.getElementById("out").value += "Fine elaborazione";
+      }
+    </script>
+    <style type="text/css">
+      body {
+        text-align: center;
+      }
+
+      #telaio {
+        width: 800px;
+        margin: 0px;
+        border: 1px solid gray;
+        line-height: 150%;
+        color: black;
+        background-color: #FFFFCC;
+        position: absolute;
+        left: 50%;
+        margin: 10px 0 0 -400px;
+      }
+
+      #testata {
+        font-size: 130%;
+        text-align: center;
+      }
+
+      #fondo {
+        font-size: 85%;
+        text-align: center;
+      }
+
+      #output {
+        font-size: 85%;
+        text-align: center;
+      }
+
+      #testata, #fondo {
+        padding: 0.5em;
+        color: white;
+        background-color: #CC9900;
+        clear: left;
+      }
+
+      #sinistro {
+        float: left;
+        width: 390px;
+        margin: 0px;
+        padding: 5px;
+        text-align: left;
+      }
+
+      #destro {
+        margin-left: 410px;
+        border-left: 1px solid gray;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="modulo" method="post" action="">
+      <div id="telaio">
+        <div id="testata">Calcolo dei primi n quadrati </div>
+
+        <div id="sinistro">Inserisci il numero dei quadrati da visualizzare</div>
+
+        <div id="destro"><input type="text" name="n"></div>
+
+        <div id="fondo">
+          <input type="button" name="esegui" value="Esegui"
+          onclick="Quadrati(document.modulo.n.value)">
+        </div>
+
+        <div id="output">
+          <textarea id="out" rows="20"></textarea>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

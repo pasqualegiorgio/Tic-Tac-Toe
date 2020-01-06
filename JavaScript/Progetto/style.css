@@ -1,10 +1,7 @@
-/* Caratteri */
-
 @font-face{
 	font-family: 'Kulim Park', sans-serif;
 }
 
-/* General */
 html, body {
 	margin: 0;
 	padding: 0;
@@ -14,29 +11,22 @@ html, body {
 	box-sizing: border-box;
 }
 
-/* Styling */
-
 body {
 	background-color: #EFEFEF;
 }
 
-a{
-	color: inherit;
-}
-
-div.page-content{
+div.page-content {
 	height: auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
-div.header{
-	text-align: center;
-}
-
-div.header .title{
+p.title {
 	color: #2F2F2F;
 	font-family: 'Kulim Park', sans-serif;
 	font-size: 50px;
 	font-weight: bold;
+	text-align: center;
 }
 
 div.search-bar {
@@ -68,138 +58,108 @@ div.search-bar .button{
 	margin: 0 2px;
 }
 
-/* Contenuto Principale */
-
 div.general-weather {
+	background-color: #EFEFEF;
+	width: auto;
+	margin-top: 50px;
 	float: left;
 	width: 50%;
 	height: 400px;
 	border: 10px;
 }
 
+a.city-Name {
+	color: #2F2F2F;
+	font-family: 'Kulim Park', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	float: left;
+	display: flex;
+}
+
+a.country {
+	color: #2F2F2F;
+	font-family: 'Kulim Park', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	float: left;
+	display: flex;
+}
+
+.info{
+	font-family: 'Kulim Park', sans-serif;
+	color: #2F2F2F;
+	float: right;
+}
+
+div.main-result #temp{
+	font-family: 'Kulim Park', sans-serif;
+	text-transform: uppercase;
+	color: #2F2F2F;
+	font-size: 70px;
+	margin-left: auto;
+	float: right;
+}
+
 div.detailed-weather {
 	float: right;
 	width: 50%;
 	height: 400px;
-	border: 10px;
-}
-
-/*
-
-div.main-result{
-	max-width: 700px;
-	margin: auto;
+	margin-top: 50px;
 }
 
 div.main-result .title{
-	font-family: 'Squada One';
+	font-family: 'Kulim Park', sans-serif;
+	color: #2F2F2F;
 	text-transform: uppercase;
-	color: #FFF;
-
 	font-size: 100px;
+	text-align: center;
 }
 
 div.main-result .sub-title{
-	font-family: 'Squada One';
-	color: #FFF;
+	font-family: 'Kulim Park', sans-serif;
+	color: #2F2F2F;
 	font-size: 50px;
-}
-
-div.main-result #temp{
-	font-family: 'Squada One';
-	text-transform: uppercase;
-	color: #FFF;
-
-	font-size: 70px;
-	margin-left: auto;
+	text-align: center;<
 }
 
 div#main-measures table{
 	width: 100%;
 }
 
-div#main-measures tbody tr:nth-child(odd){
-  background-color: rgba( 255, 255, 255, 0.1 );
-}
-
-div#main-measures tbody tr:nth-child(even){
-  background-color: rgba( 255, 255, 255, 0.2 );
-}
-
 div#main-measures table tr td{
 	width: 50%;
-
 	margin: 0;
 	padding: 10px;
 }
 
-div#main-measures table tr td:nth-child(even){
-	border-radius: 0 10px 10px 0;
-}
-
-div#main-measures table tr td:nth-child(odd){
-	border-radius: 10px 0 0 10px;
-}
-
-.info{
-	color: #FFF;
-
-	font-family: 'Rubik';
-}
-
-div.instant-info{
-	background-color: rgba( 255, 255, 255, 0.2 );
-	width: auto;
-	text-align: center;
-	text-transform: capitalize;
-	padding: 5px;
-	margin: 0;
-	border-radius: 20px;
-}
-
 div.footer{
-	color: #FFF;
+	font-family: 'Kulim Park', sans-serif;
+	color: #2F2F2F;;
 	text-align: center;
 }
 
-div#credits img.icon{
-	width: 200px;
-	height: auto;
+div.social {
+	font-size: 40px;
+	margin: -10px;
 }
 
-div#credits img.icon, div#social img.icon{
-	vertical-align: middle;
-	filter: grayscale(100);
+i {
+  margin-right: 10px;
+	color: #2F2F2F;
 }
 
-div#credits img.icon:hover, div#social img.icon:hover{
-	transition: filter 0.5s;
-	filter: grayscale(0);
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
 }
 
-img.icon{
-	height: 64px;
-	width: auto;
-}
-*/
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
 
-/* SweetAlert */
-/*
-.swal-modal, .swal-button{
-	border-radius: 20px;
-	font-family: 'Rubik';
 }
 
-.swal-modal .swal-title{
-	font-family: 'Rubik Bold';
-}
-
-@media screen and ( max-device-width: 400px ){
-	div.header .title{
-		font-size: 30px;
-	}
-
-	div.search-bar{
-		width: 300px;
-	}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  
 }

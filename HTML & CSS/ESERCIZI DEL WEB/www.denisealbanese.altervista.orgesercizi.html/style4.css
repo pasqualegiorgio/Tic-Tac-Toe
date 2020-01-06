@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearer {
+  clear: both;
+}
+
+img {
+  border: none;
+}
+
+header, nav, article, aside, section, footer, main, figure, figcaption, hgroup {
+  display: block;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+body {
+  background-color: #FFF;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+table {
+  border: 1px solid #999999;
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 980px;
+  font-family: "Arial", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+th {
+  border: 1px solid #999999;
+  height: 29px;
+  padding: 0px 5px;
+  background-color: #CCCCCC;
+}
+
+td {
+  border: 1px solid #999999;
+  height: 39px;
+  padding: 0px 30px 0px 10px;
+}
+
+td div.rosso {
+  background-color: #FF0000;
+  border: 1px solid #000;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+td div.marrone {
+  background-color: #CC6600;
+  border: 1px solid #000;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+tr.bianco {
+  background-color: #FFF;
+}
+
+tr.grigio {
+  background-color: #E0E9EB;
+}
+
+/* media for tablet and mobile device */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+}
