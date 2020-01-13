@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript">
+            function funzioneEta() {
+                var a_nascita = document.forms["due_anni"]["anno_nascita"].value;
+                var a_attuale = document.forms["due_anni"]["anno_attuale"].value;
+                eta = parseInt(a_attuale) - parseInt(a_nascita);
+                window.alert("La tua età: " + eta);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Inserire Dati</h1>
+        <form name="due_anni">
+            anno di nascita <input name="anno_nascita" type="text">
+            anno attuale <input name="anno_attuale" type="text">
+            <input type="button" value="calcola!" onclick="funzioneEta()">
+        </form>
+    </body>
+</html>

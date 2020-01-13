@@ -15,31 +15,6 @@ function getWeatherByCity( request ){
 	var key = "efa6f02761d89bccc4da7072252c5102";
 	var apiUrl = "https://api.openweathermap.org/data/2.5/weather?appid=" + key + "&units=metric&lang=it&q=";
 
-/*
-	$.ajax({
-		dataType: "json",
-		url: apiUrl1 + request,
-		data: "",
-		success: function(){ console.log("jsweather@> Request Completed") },
-		statusCode: {
-			400: function(){
-				swal({
-					title: "Ops..",
-					text: "A quanto pare la tua richiesta non Ã¨ valida. Prova ad inserire un'altra cittÃ !",
-					icon: "error"
-				});
-			},
-
-			404: function(){
-				swal({
-					title: "Cosa?",
-					text: "Non credo di conoscere quella cittÃ , sicuro di averla scritta bene?",
-					icon: "warning"
-				});
-			}
-		}
-	});
-*/
 	$.getJSON( apiUrl + request,  function( data ){
 		assign(data);
 	});

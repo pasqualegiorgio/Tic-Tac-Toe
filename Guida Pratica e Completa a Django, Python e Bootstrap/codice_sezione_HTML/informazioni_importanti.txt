@@ -1,0 +1,22 @@
+Questo materiale è parte del Video Corso "Guida Pratica e Completa a Django 2.0 e Bootstrap 4" 
+di programmareinpython.it, la Risorsa Italiana dedicata a Python e Django!
+
+
+Sito Ufficiale:   https://www.programmareinpython.it
+
+Pagina Facebook:  https://www.facebook.com/programmareinpython.it
+
+YouTube:          https://www.youtube.com/c/pymike
+
+Twitter:          https://www.twitter.com/pymike00
+
+Vuoi regalare questo corso a qualcuno?
+Ecco per te un coupon di sconto SPECIALE_REGALO valido per due nuovi iscritti!
+QUI: https://bit.ly/2pShuCi
+
+Grazie,
+Happy Coding!
+
+Michele "PyMike" Saba
+Creatore @programmareinpython.it
+

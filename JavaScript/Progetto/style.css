@@ -21,6 +21,11 @@ div.page-content {
 	margin-top: 50px;
 }
 
+img.icon {
+	width: 50px;
+	height: 50px;
+}
+
 p.title {
 	color: #2F2F2F;
 	font-family: 'Kulim Park', sans-serif;
@@ -60,11 +65,13 @@ div.search-bar .button{
 
 div.general-weather {
 	background-color: #EFEFEF;
-	width: auto;
 	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
 	float: left;
 	width: 50%;
-	height: 400px;
+	height: 350px;
 	border: 10px;
 }
 
@@ -102,10 +109,14 @@ div.main-result #temp{
 }
 
 div.detailed-weather {
+	background-color: #EFEFEF;
 	float: right;
 	width: 50%;
-	height: 400px;
+	height: 350px;
 	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 div.main-result .title{
@@ -131,12 +142,14 @@ div#main-measures table tr td{
 	width: 50%;
 	margin: 0;
 	padding: 10px;
+	text-align: right;
 }
 
 div.footer{
 	font-family: 'Kulim Park', sans-serif;
-	color: #2F2F2F;;
+	color: #2F2F2F;
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 div.social {
@@ -149,17 +162,90 @@ i {
 	color: #2F2F2F;
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
+/* Very Small Mobile Styles */
+@media only screen and (max-width: 320px) {
+	div.search-bar {
+		border-width: thin;
+		border-style: double;
+		border-radius: 10px;
+		text-align: center;
+		margin: auto;
+		width: 280px;
+		background-color: #FFF;
+		cursor: pointer;
+	}
 
+	div.general-weather {
+		background-color: #EFEFEF;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width: 300px;
+		height: auto;
+	}
+
+	div.detailed-weather {
+		background-color: #EFEFEF;
+		width: 300px;
+		height: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
 }
 
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+/* Small Mobile Styles */
+@media only screen and (min-width: 321px) and (max-width: 372px) {
+	div.search-bar {
+		border-width: thin;
+		border-style: double;
+		border-radius: 10px;
+		text-align: center;
+		margin: auto;
+		width: 320px;
+		background-color: #FFF;
+		cursor: pointer;
+	}
 
+	table {
+		width: 340px;
+	}
+
+	div.general-weather {
+		background-color: #EFEFEF;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width: 370px;
+		height: auto;
+	}
+
+	div.detailed-weather {
+		background-color: #EFEFEF;
+		width: 370px;
+		height: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  
+/* Big Mobile & Tablet Styles */
+@media only screen and (min-width: 373px) and (max-width: 650px) {
+	div.general-weather {
+		background-color: #EFEFEF;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		height: auto;
+		border: 10px;
+	}
+
+	div.detailed-weather {
+		background-color: #EFEFEF;
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }

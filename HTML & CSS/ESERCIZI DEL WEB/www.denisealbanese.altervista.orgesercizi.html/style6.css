@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearer {
+  clear: both;
+}
+
+img {
+  border: none;
+}
+
+header, nav, article, aside, section, footer, main, figure, figcaption, hgroup {
+  display: block;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+body {
+  background-color: #FFF;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#nav {
+  height: 40px;
+  background-color: #DCE4D2;
+}
+
+#nav ul {
+  list-style-type: none;
+}
+
+#nav li {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  position: relative;
+}
+
+#nav a {
+  width: 120px;
+  height: 40px;
+  display: block;
+}
+
+#nav a:link, #nav a:visited {
+  color: #627000;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  width: 120px;
+  height: 40px;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  background-color: #8CA273;
+  color: #FFF;
+}
+
+#nav ul ul {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 100;
+  display: none;
+  background-color: #DCE4D0;
+  color: #360;
+}
+
+#nav ul li:hover ul {
+  display: block;
+}
+
+#nav ul li:hover ul ul {
+  position: absolute;
+  left: 120px;
+  top: 0;
+  display: none;
+  z-index: 100;
+}
+
+#nav ul ul li:hover ul {
+  display: block;
+}
+
+#nav ul ul li:hover ul ul {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  display: none;
+}
+
+#nav ul ul ul li:hover ul {
+  display: block;
+}
+
+/* media for tablet and mobile device */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+}
